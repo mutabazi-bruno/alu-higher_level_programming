@@ -9,4 +9,4 @@ class MyList(list):
         '''prints the sorted list'''
         sorted_list = self.copy()
         sorted_list.sort()
-        print("{}".format(sorted_list))`
+        print("{}".format(sorted_list))
