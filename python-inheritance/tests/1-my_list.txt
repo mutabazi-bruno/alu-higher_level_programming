@@ -1,3 +1,4 @@
+
 The ``1-my_list`` module
 ============================
 
@@ -110,4 +111,4 @@ Check if print_sorted() returns a new list
     >>> my_list.print_sorted()
     [1, 2, 7]
     >>> my_list
-    [7, 1, 2]]
+    [7, 1, 2]
