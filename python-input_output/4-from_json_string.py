@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 '''script from javascript object notation(JSON) to object'''
 
