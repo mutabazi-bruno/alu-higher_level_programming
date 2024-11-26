@@ -2,7 +2,7 @@
 
 import urllib.request
 
-url = 'https://alu-intranet.hbtn.io/status'
+url = 'http://0.0.0.0:5050/status'
 
 # Send the request and handle the response
 with urllib.request.urlopen(url) as response:
