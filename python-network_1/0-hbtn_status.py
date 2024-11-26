@@ -2,9 +2,8 @@
 
 import urllib.request
 
-url = 'http://0.0.0.0:5050/status'
+url = 'https://alu-intranet.hbtn.io/status'
 
-# Send the request and handle the response
 with urllib.request.urlopen(url) as response:
     content = response.read()
     print("Body response:")
