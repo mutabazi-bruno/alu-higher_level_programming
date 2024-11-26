@@ -3,8 +3,7 @@
 Module 4-hbtn_status.py
 """
 
-import requests # type: ignore
-
+import requests 
 
 if __name__ == "__main__":
     r = requests.get("https://intranet.hbtn.io/status")
