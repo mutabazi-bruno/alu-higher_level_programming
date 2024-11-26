@@ -2,8 +2,7 @@
 
 import urllib.request
 
-url = 'http://0.0.0.0:5050/status'
-
+url = 'http://0.0.0.0:5050/status'  # Use the correct URL as required
 headers = {
     'User-Agent': (
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
@@ -11,8 +10,8 @@ headers = {
     )
 }
 
+# Send the HTTP request and handle the response
 req = urllib.request.Request(url, headers=headers)
-
 with urllib.request.urlopen(req) as response:
     content = response.read()
     print("Body response:")
