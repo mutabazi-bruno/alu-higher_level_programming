@@ -1,15 +1,11 @@
 #!/usr/bin/python3
+
 import urllib.request
 
-url = 'https://intranet.hbtn.io/status'
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-    '\n    AppleWebKit/537.36 (KHTML, like Gecko)'
-    '\n    Chrome/99.0.4844.84 Safari/537.36',
-}
+url = 'https://alu-intranet.hbtn.io/status'
 
-req = urllib.request.Request(url, headers=headers)
-with urllib.request.urlopen(req) as response:
+# Send the request and handle the response
+with urllib.request.urlopen(url) as response:
     content = response.read()
     print("Body response:")
     print("\t- type:", type(content))
