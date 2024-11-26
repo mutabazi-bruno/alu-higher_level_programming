@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
 import urllib.request
+import os
 
-url = 'https://alu-intranet.hbtn.io/status'
+# Use a default URL, but allow override via environment variable
+url = os.getenv('TEST_URL', 'https://alu-intranet.hbtn.io/status')
 
+# Send the request and handle the response
 with urllib.request.urlopen(url) as response:
     content = response.read()
     print("Body response:")
