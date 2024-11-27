@@ -14,4 +14,4 @@ if __name__ == "__main__":
         (sys.argv[4],)
     )
     for row in c.fetchall():
-        print(row)
+        print(row))
